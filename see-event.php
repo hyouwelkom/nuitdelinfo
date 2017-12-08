@@ -1,9 +1,12 @@
 <?php
 	require_once('config.php');
 	
-	if(isset($_SESSION['username'])) {
-		$selectquery = $bdd->prepare('SELECT * FROM event WHERE owner_id = :id');
-		$selectquery->execute(array('id' => $member['id']));
+	$id = null;
+	
+	if(isset($_SESSION['username']) && is_numeric($_GET['id'])) {
+		$selectquery = $bdd->prepare('SELECT * FROM event WHERE id = :id');
+		$selectquery->execute(array('id' => $id));
+		$event = $selectquery->fetch();
 	}
 	
 	
@@ -24,15 +27,9 @@
 			));
 			$insert = $insertquery->fetch();
 			
-			header('Location: event');
+			header('Location: see-event?id=' . $id);
 		} else {
-			header('Location: event?error=1');
-		}
-	}
-	
-	if(!empty($_GET["error"])) {
-		if($_GET["error"] == 1) {
-			$message = "Vous devez remplir tous les champs !";
+			header('Location: see-event?id=' . $id . '&error=1');
 		}
 	}
 ?>

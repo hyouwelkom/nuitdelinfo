@@ -95,7 +95,7 @@ nav li.last:after {
 	content: "";
 }
 
-input[type=text], input[type=password] {
+input, select {
 	width: 100%;
 	height: 30px;
 	font-size: 20px;
@@ -103,6 +103,10 @@ input[type=text], input[type=password] {
 	border: 1px solid #d35400;
 	outline: none;
 	padding: 0 5px;
+}
+
+select {
+	width: calc(100% + 12px);
 }
 
 #register, #login {
@@ -158,4 +162,73 @@ input[type="submit"]:hover {
 
 .responsive.last {
 	font-size: 30px;
+}
+
+.source a {
+	color: #d35400;
+	text-decoration: none;
+}
+
+.source a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+    margin: 10px auto;
+    color: orange;
+}
+
+hr {
+	border: 1px solid orange;
+	margin: 10px auto;
+}
+
+#doodlegame, #twogame, #katanagame, #bubblegame, #flappygame {
+	display: none;
+}
+
+#chatbot {
+	width: 350px;
+	margin: 0 auto;
+}
+
+#game-list {
+	width: 470px;
+	margin: 0 auto;
+}
+
+#game-flash {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.games {
+	display: inline;
+	cursor: pointer;
+}
+
+.games:hover {
+	opacity: 0.8;
+}
+
+.games img {
+	width: 90px;
+    height: 90px;
+}
+
+/* */
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+thead {
+	background: #d35400;
+}
+
+tr, th, td {
+	padding: 10px;
+	border: 1px solid black;
 }

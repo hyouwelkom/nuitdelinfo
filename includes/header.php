@@ -25,54 +25,11 @@
 				<ul>
 					<li class="responsive last"><a href="javascript:void(0);" class="icon" onclick="menu()">☰</a></li>
 					<li class="web"><a href="index">Accueil</a></li>
-					<li class="web"><a href="safety">Sécurité</a></li>
 					<li class="web"><a href="trafic">Info trafic</a></li>
-					<li class="web"><a href="event">Créer un événement</a></li>
+					<li class="web"><a href="event">Événement</a></li>
 					<li class="web last"><a href="chat">Chat</a></li>
 				</ul>
 			</nav>
 		</section>
 	</div>
-	
-	<div id="carrousel" class="container">
-		<ul>
-			<li><a href="safety"><img src="../img/alcool.jpg" alt="Alcool" ></a></li>
-			<li><a href="safety"><img src="../img/drogue.jpg" alt="Drogue" /></a></li>
-			<li><a href="safety"><img src="../img/vitesse.jpg" alt="Vitesse" /></a></li>
-		</ul>
-	</div>
 </header>
-
-<script>
-$(document).ready(function() {
-	var $carrousel = $('#carrousel'),
-		$img = $('#carrousel img'),
-		indexImg = $img.length - 1,
-		i = 0,
-		$currentImg = $img.eq(i);
-
-	$img.hide();
-	$currentImg.fadeIn();
-
-	function slideImg(){
-		setTimeout(function(){			
-			if(i < indexImg){
-			i++;
-		}
-		else{
-			i = 0;
-		}
-
-		$img.hide();
-
-		$currentImg = $img.eq(i);
-		$currentImg.fadeIn();
-
-		slideImg();
-
-		}, 5000);
-	}
-
-	slideImg();
-});
-</script>

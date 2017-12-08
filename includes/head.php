@@ -5,4 +5,5 @@
 	<link rel="stylesheet" href="css/fontawesome.css?<?=rand(0,10000000); ?>" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="../js/menu.js?<?=rand(0,10000000); ?>"></script>
+	<script src="../js/carrousel.js?<?=rand(0,10000000); ?>"></script>
 </head>
