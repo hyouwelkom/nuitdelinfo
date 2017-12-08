@@ -1,0 +1,81 @@
+@media screen and (max-width: 1000px) {
+	.container {
+		width: calc(100% - 40px);
+		margin: 0 20px;
+	}
+	
+	#carrousel ul {
+		width: 100%;
+		margin-left: -20px;
+	}
+	
+	#carrousel ul li a img {
+		width: 100%;
+	}
+	
+	#carrousel {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	nav li:after {
+		margin: 0;
+	}
+	
+	nav ul li {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 675px) {
+	li.responsive.last {
+		display: block;
+	}
+	
+	.web {
+		display: none;
+	}
+	
+	.topnav .web {
+		display: block;
+		position: relative;
+		width: calc(100% - 2px);
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		padding: 0 10px;
+		background: white;
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		border-bottom: 1px solid black;
+		z-index: 2;
+	}
+	
+	.topnav .web a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.topnav .web a {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+		
+	li.responsive.last {
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.container .left {
+		display: none;
+	}
+	
+	.container .right {
+		float: none;
+		text-align: center;
+	}
+}
